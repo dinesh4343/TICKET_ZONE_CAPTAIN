@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Yinka Enoch Adedokun">
+    <link rel="stylesheet"
+    href="styles/style.css">
+	<title>Login Page</title>
+	
+	<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<nav class="nav">
+		<i class="uil uil-bars navOpenBtn"></i>
+		<a href="#" class="logo">CAPTAIN'S OF TICKET ZONE</a>
+		<i class="uil uil-search search-icon" id="searchIcon"></i>
+		<div class="search-box">
+		  <i class="uil uil-search search-icon"></i>
+		  <input type="text" placeholder="Search here..." />
+		</div>
+	  </nav>
+
+
+	<dotlottie-player src="https://lottie.host/ab34db46-0a03-4bef-b864-0a8943ce3680/CpkiyKz5D0.json" background="transparent" speed="1" style="width: 100%; height: 300px" direction="1" playMode="normal" loop autoplay></dotlottie-player>
+	
+	  <div class="box">
+		<h2>Login</h2>
+		<form id="loginForm" action="">
+		  <div class="inputBox">
+			<input type="text" id="username" name="username" required autocomplete="username">
+			<label for="username">Username</label>
+		  </div>
+		  <div class="inputBox">
+			<input type="password" id="password" name="password" required autocomplete="current-password">
+			<label for="password">Password</label>
+		  </div>
+		  <input type="submit" value="Submit">
+		</form>
+	  </div>
+</body>
+<script src="scripts/script.js"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+</html>

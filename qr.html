@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+		href="styles/qr.css">
+	<link rel="stylesheet"
+		href="styles/style.css">
+		<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+	<title>QR Code Scanner
+	</title>
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth-compat.js"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
+    
+<script type="module">
+		
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyBB2czjpbpALPGx3GhR5LfoKS4iBHpptGQ",
+    authDomain: "tickets-12578.firebaseapp.com",
+    databaseURL: "https://tickets-12578-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "tickets-12578",
+    storageBucket: "tickets-12578.appspot.com",
+    messagingSenderId: "826244609515",
+    appId: "1:826244609515:web:8565ad3e89913876b555ae"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+    const realtimeDB = firebase.database();
+        const auth = firebase.auth();
+        const app = initializeApp(firebaseConfig);
+
+</script>
+
+</head>
+
+<body>
+	<nav class="nav">
+		<i class="uil uil-bars navOpenBtn"></i>
+		<a href="#" class="logo">CAPTAIN'S OF TICKET ZONE</a>
+  
+		<ul class="nav-links">
+		  <i class="uil uil-times navCloseBtn"></i>
+		  <li><a href="#">Home</a></li>
+		  <li><a href="#">Services</a></li>
+		  <li><a href="#">About Us</a></li>
+		  <li><a href="#">Contact Us</a></li>
+		</ul>
+  
+		<i class="uil uil-search search-icon" id="searchIcon"></i>
+		<div class="search-box">
+		  <i class="uil uil-search search-icon"></i>
+		  <input type="text" placeholder="Search here..." />
+		</div>
+	  </nav>
+	<div class="container">
+		<h1>Scan QR Codes</h1>
+		<div class="section">
+			<div id="my-qr-reader">
+			</div>
+		</div>
+	</div>
+	<script
+		src="https://unpkg.com/html5-qrcode">
+	</script>
+	<script src="scripts/qr.js"></script>
+	<script>
+		 
+		</script>
+	
+</body>
+
+</html>
